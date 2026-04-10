@@ -1,44 +1,31 @@
-import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+
+import styles from "./App.module.css";
 
 import "../src/styles/global.css";
 import "../src/styles/theme.css";
-import styles from "./App.module.css";
 
-import { FaSignalMessenger } from "react-icons/fa6";
-
+import { Home } from "./pages/Home";
 import { Container } from "./components/Container";
-import { Rota } from "./Rotas";
-import { Heading } from "./components/Heading";
-import { FormModal } from "../src/components/Form";
+import { SectionHeading } from "./components/section-heading/SectionHeading";
+import { About } from "./pages/About/About";
+import { Habilidades } from "./pages/Habilidades/Habilidades";
 
 function App() {
-  const [isFormOpen, setIsFormOpen] = useState(false);
-
   return (
     <BrowserRouter>
-      <div className={styles.app}>
-        <div>
-          <Heading />
-        </div>
+      <Container className={styles.homeSection}>
+        <SectionHeading className={styles.homeHeading} />
+        <Home />
+      </Container>
 
-        <div>
-          <Container>
-            <Rota />
-          </Container>
-        </div>
+      <Container className={styles.skillsSection}>
+        <Habilidades />
+      </Container>
 
-        <div className={styles.containerBotao}>
-          <button
-            onClick={() => setIsFormOpen(true)}
-            className={styles.contact_button}
-          >
-            <FaSignalMessenger className={styles.icone} />
-          </button>
-        </div>
-
-        {isFormOpen && <FormModal onClose={() => setIsFormOpen(false)} />}
-      </div>
+      <Container className={styles.aboutSection}>
+        <About />
+      </Container>
     </BrowserRouter>
   );
 }

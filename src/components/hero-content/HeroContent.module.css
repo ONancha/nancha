@@ -1,0 +1,19 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-between-children);
+  color: var(--text-primary);
+}
+
+.title {
+  font-size: var(--font-size-title);
+}
+
+.highlight {
+  width: 20rem;
+  color: var(--text-sixth);
+}
+
+.description {
+  font-weight: var(--font-weight-300);
+}

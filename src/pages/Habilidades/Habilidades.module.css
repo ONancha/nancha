@@ -1,74 +1,13 @@
-.habilidades {
+.skillsSection {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 5rem;
-  padding: 2.5rem 0;
-}
-
-.introducao h1 {
-  border-bottom: var(--borda) dashed var(--corBorda);
-  padding-bottom: var(--preenchimentoInferior);
-  letter-spacing: var(--espacamentoMinino);
-}
-
-.introducao p {
-  padding-top: var(--preenchimentoSuperior);
-  color: var(--corTexto);
-}
-
-.lista {
-  display: flex;
-  gap: 2.5rem;
-  flex-flow: column;
-}
-
-.lista p {
-  font-weight: bold;
-  color: var(--corTitulo);
-}
-
-.lista ul {
-  display: flex;
-  flex-flow: wrap;
-  gap: 2.5rem;
-  list-style-type: none;
-  color: var(--corTexto);
-}
-
-.ferramentas li,
-.linguagens li {
-  width: fit-content;
-  list-style-type: none;
-  border: var(--borda) dashed var(--corBorda);
-  padding: var(--preenchimento);
-}
-
-.curriculo {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--corLinkVitae);
-}
-
-.curriculo:hover {
-  color: var(--corLinkHover);
-}
-
-@media (max-width: 480px) {
-  .introducao h1 {
-    font-size: var(--tamanho-titulo-mobile);
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .introducao h1 {
-    font-size: var(--tamanho-titulo-tablet);
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .introducao h1 {
-    font-size: var(--tamanho-titulo);
-  }
+  gap: var(--spacing-between-children);
+  text-align: center;
+  margin-top: -25rem;
+  background: var(--background-primary);
+  border-radius: var(--spacing-between-tag);
+  border: 1px solid rgba(0, 0, 0, 0.098);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.015);
+  padding: 4rem 0;
 }

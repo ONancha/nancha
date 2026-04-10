@@ -1,0 +1,25 @@
+.headingContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.headingContent {
+  width: 90%;
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.iconLogo {
+  font-size: 3.5rem;
+  color: var(--text-secundary);
+}
+
+.headingImage {
+  width: 10rem;
+}

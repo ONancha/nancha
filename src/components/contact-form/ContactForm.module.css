@@ -1,0 +1,62 @@
+.contactContainer {
+  background: var(--background-primary);
+  border-radius: var(--border-radius-global);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-between-children);
+  padding: var(--border-spacing);
+}
+
+.contactTextarea {
+  height: 10rem;
+  border: none;
+  background: transparent;
+  transition: all 0.2s ease-out;
+  resize: none;
+  padding: var(--border-spacing);
+}
+
+.contactTextarea::placeholder {
+  color: var(--text-third);
+  font-size: var(--text-size-secondary);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.contactTextarea:focus {
+  outline: none;
+  border: none;
+}
+
+.contactButtonBox {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactButton {
+  width: 160px;
+  background: var(--background-sixth);
+  border-radius: var(--border-radius-global);
+  border: 1px solid var(--border-secondary);
+  padding: var(--border-spacing);
+  font-weight: var(--font-weight-600);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.arrow {
+  font-size: var(--text-size-secondary);
+  margin-left: 0.4rem;
+  display: inline-block;
+}
+
+.contactButton:active {
+  transform: scale(0.97);
+}
+
+.contactButton:disabled {
+  cursor: not-allowed;
+}

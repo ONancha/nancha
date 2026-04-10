@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +9,10 @@ html {
   height: 100%; /* garante altura total */
 }
 body {
-  font-family: "Special Elite", serif;
-  font-weight: 400;
+  font-family: "Inter", system-ui, sans-serif;
   font-style: normal;
   font-size: 1.6rem;
   height: 100vh; /* ocupa toda a viewport */
   width: 100%;
-  position: relative;
-  background-color: var(--fundo);
-  overflow-y: auto; /* ativa scroll vertical */
-  overflow-x: hidden; /* evita scroll lateral */
+  background-color: var(--background-primary);
 }

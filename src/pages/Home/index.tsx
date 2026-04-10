@@ -1,27 +1,23 @@
-// import { MoveRight } from "lucide-react";
 import styles from "./styles.module.css";
 
-import Perfil from "../../assets/naizinho.jpg";
-import SocialIcons from "../../components/Media/SocialIcons";
+import { ContactForm } from "../../components/contact-form/ContactForm";
+import { HeroContent } from "../../components/hero-content/HeroContent";
+import { ServicesSection } from "../../components/service-section/ServicesSection";
 
 export function Home() {
   return (
-    <div className={styles.home}>
-      <div className={styles.home_banner}>
-        <h1>DESENVOLVEDOR FRONTEND</h1>
-        <p>
-          Chegue mais, véi! sou o Nailson Rocha, e transformo ideias em
-          interfaces web bonitas e fáceis de usar.
-        </p>
+    <section className={styles.container}>
+      <div>
+        <HeroContent />
       </div>
 
-      <div className={styles.imagem}>
-        <img src={Perfil} alt="Foto de perfil" className={styles.perfil} />
+      <div>
+        <ContactForm />
       </div>
 
-      <div className={styles.icone}>
-        <SocialIcons className={styles.si} />
+      <div>
+        <ServicesSection />
       </div>
-    </div>
+    </section>
   );
 }

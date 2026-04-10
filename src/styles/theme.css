@@ -1,83 +1,85 @@
 :root {
-  --espacamento-texto: 0.5rem;
-  --caixa-link: 10rem;
+  /* BACKGROUND */
+  --background-primary: #ffffff;
+  --background-secondary: #0a0219;
+  --background-third: #808080;
+  --background-fourth: #6a00ff;
+  --background-fifth: #05010f;
+  --background-sixth: #00ffbf;
 
-  --brecha-hover: 1rem;
+  /* TITLE */
+  --title-primary: #ffffff;
+  --title-secondary: #0a0219;
+  --title-third: #808080;
+  --title-fourth: #6a00ff;
+  --title-fifth: #05010f;
+  --title-sixth: #00ffbf;
 
-  --preenchimento-texto: 1rem;
-  --preenchimento-caixa: 2.5rem;
-  --preenchimento-top: 5rem;
-  --preenchimento-lista: 0.5rem;
-  --transition-duration: 0.5s;
+  /* TEXT */
+  --text-primary: #ffffff;
+  --text-secondary: #0a0219;
+  --text-third: #808080;
+  --text-fourth: #6a00ff;
+  --text-fifth: #05010f;
+  --text-sixth: #00ffbf;
 
-  --tamanho-link: 200px;
+  --text-size-primary: 1.4rem;
+  --text-size-secondary: 1.3rem;
+  --text-size-third: 1.2rem;
 
-  /*Titulos*/
+  /* BUTTON */
+  --button-primary: #ffffff;
+  --button-secondary: #0a0219;
+  --button-third: #808080;
+  --button-fourth: #6a00ff;
+  --button-fifth: #05010f;
+  --button-sixth: #00ffbf;
 
-  --tamanho-titulo-mobile: 2rem;
-  --tamanho-titulo-tablet: 2.4rem;
-  --tamanho-titulo: 3rem;
+  /* BORDER */
+  --border-primary: #ffffff;
+  --border-secondary: #0a0219;
+  --border-third: #e2edff59;
+  --border-fourth: #6a00ff;
+  --border-fifth: #05010f;
+  --border-sixth: #00ffbf;
+  --border-seventh: #808080;
 
-  --corTitulo: #1c1c1c;
+  --border-radius-global: 1rem;
 
-  /*Textos*/
+  --border-spacing: 1rem;
 
-  --corTexto: #333333;
+  /* ICON */
+  --icon-primary: #ffffff;
+  --icon-secondary: #0a0219;
+  --icon-third: #808080;
+  --icon-fourth: #6a00ff;
+  --icon-fifth: #05010f;
+  --icon-sixth: #00ffbf;
 
-  /*Label*/
+  /* ESPAÇAMENTO */
+  --spacing-between-components: 4rem;
+  --spacing-between-tag: 1rem;
+  --spacing-between-children: 3rem;
+  --spacing-between-icon: 0.5rem;
 
-  /*Icones*/
+  /* FONTE SIZE */
+  --font-size-title: 4rem;
 
-  --tamanho-icone: 3rem;
-  --corIcone: #2e2e2e;
+  /* FONT WEIGHT */
+  --font-weight-100: 100;
+  --font-weight-200: 200;
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
 
-  /*Logo*/
+  /* ICON */
+  --icon-color: #00ffbf91;
+  --font-size-icon: 5rem;
 
-  --corLogo: #2e2e2e;
-  --tamanho: 3rem;
-
-  /*Bordas*/
-
-  --borda: 1px;
-  --corBorda: #777777;
-
-  /*Margem*/
-
-  --margem-container: 5rem;
-  --margem-inferior: 10rem;
-
-  /*Espaçamemto*/
-
-  --espacamento: 2.5rem;
-  --espacamentoMinino: 1px;
-
-  /*Preenchimento*/
-
-  --preenchimentoInferior: 0.5rem;
-  --preenchimentoSuperior: 1rem;
-  --preenchimentoEsquerdo: 0.5rem;
-  --preenchimentoDireito: 0.5rem;
-  --preenchimento: 0.5rem;
-
-  /*Brecha*/
-
-  --brecha: 2.5rem;
-  --brechaCurta: 0.5rem;
-
-  /*Botões*/
-
-  --corBotao: #555555;
-  --corBtn: #b1b1b1;
-
-  /*Fundo*/
-
-  --fundo: #fafafa;
-  --fundoForm: #fafafa;
-  --fundoBotao: #333333;
-
-  /*Links*/
-
-  --corLink: #555555;
-  --corLinkVitae: #333333;
-  --corLinkHover: #010101;
+  /* MARGIN */
+  --margin-text: 0.5rem;
 }

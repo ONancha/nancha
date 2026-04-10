@@ -1,0 +1,111 @@
+.container {
+  position: relative;
+}
+
+/* BOTÃO */
+.toggleButton {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* BARRAS */
+.bar {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+}
+
+/* VIRA X */
+.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MENU ESCONDIDO */
+.menu {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #f2f2f2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+
+  transition: all 0.3s ease;
+}
+
+/* MENU ABERTO */
+.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* LINKS */
+.menuList,
+.socialList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  margin-bottom: 12px;
+}
+
+.menuLink,
+.contactLink,
+.socialLink {
+  color: #0a0219;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: opacity 0.2s ease;
+}
+
+.menuLink:hover,
+.contactLink:hover,
+.socialLink:hover {
+  opacity: 0.7;
+}
+
+.contactSection {
+  margin: 3rem 0;
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.contactLink {
+  display: block;
+  margin-bottom: 8px;
+  color: #0a0219;
+}
+
+.socialList {
+  display: flex;
+  gap: 3rem;
+}

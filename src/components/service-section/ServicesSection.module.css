@@ -1,0 +1,35 @@
+.servicesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-between-children);
+  color: var(--text-primary);
+}
+
+.servicesIntro {
+  font-size: var(--text-size-secondary);
+}
+
+.servicesList {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.serviceItem {
+  width: fit-content;
+  margin: var(--margin-text);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-between-tag);
+  list-style: none;
+  font-size: var(--text-size-secondary);
+  border-radius: var(--border-radius-global);
+  border: 1px solid var(--border-third);
+  padding: var(--spacing-between-icon);
+}
+
+.serviceIcon {
+  color: var(--icon-color);
+}

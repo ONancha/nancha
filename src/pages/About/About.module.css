@@ -1,0 +1,24 @@
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  border: 2px solid red;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.textContent p {
+  color: var(--text-fifth);
+  text-align: center;
+}
+
+.profile {
+  width: 10rem;
+}

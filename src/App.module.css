@@ -1,31 +1,93 @@
-.app {
-  width: 100%;
-  height: 100vh;
+.homeSection {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #0a0219 0%, #05010f 100%);
+  isolation: isolate;
 }
 
-.containerBotao {
-  position: fixed;
-  bottom: 3rem;
-  right: 0;
+/* garante conteúdo acima do fundo */
+.homeSection > * {
+  position: relative;
+  z-index: 2;
 }
 
-.contact_button {
-  color: var(--color-heading);
-  cursor: pointer;
-  background: none;
-  border: none;
-  outline: none;
+/* estrelas pequenas */
+.homeSection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow:
+    120px 140px #9fe870,
+    320px 400px #ffffff,
+    540px 180px #9fe870,
+    700px 300px #ffffff,
+    900px 120px #9fe870,
+    1150px 500px #ffffff,
+    1320px 260px #9fe870,
+    1500px 600px #ffffff,
+    1700px 350px #9fe870,
+    1900px 800px #ffffff,
+    220px 900px #9fe870,
+    480px 1100px #ffffff,
+    720px 1400px #9fe870,
+    980px 1600px #ffffff,
+    1260px 1800px #9fe870;
+  animation: starsSlow 80s linear infinite;
 }
 
-.button {
-  cursor: pointer;
+/* estrelas médias */
+.homeSection::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow:
+    180px 240px #ffffff,
+    450px 360px #9fe870,
+    670px 520px #ffffff,
+    930px 640px #9fe870,
+    1200px 280px #ffffff,
+    1480px 720px #9fe870,
+    1750px 460px #ffffff,
+    250px 1250px #9fe870,
+    620px 1500px #ffffff,
+    980px 1750px #9fe870;
+  animation: starsFast 120s linear infinite;
 }
 
-.icone {
-  font-size: var(--tamanho);
-  color: var(--corIcone);
-  display: flex;
-  margin-right: 3rem;
+/* camada extra opcional */
+
+/* animações */
+@keyframes starsSlow {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes starsFast {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+.skillsSection {
+  height: 150vh;
 }
