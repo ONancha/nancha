@@ -1,13 +1,17 @@
+import React from "react";
 import styles from "./style.module.css";
 
-type ContainerProps = {
-  children: React.ReactNode;
-  className?: string; // adiciona suporte a className
-};
+type ContainerProps = React.ComponentPropsWithoutRef<"div">;
 
-export function Container({ children, className }: ContainerProps) {
+export function Container({
+  children,
+  className = "",
+  ...props
+}: ContainerProps) {
+  const containerClasses = `${styles.container} ${className}`.trim();
+
   return (
-    <div className={`${styles.container} ${className ?? ""}`}>
+    <div className={containerClasses} {...props}>
       <div className={styles.container_conteudo}>{children}</div>
     </div>
   );

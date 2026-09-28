@@ -1,85 +1,66 @@
 :root {
-  /* BACKGROUND */
-  --background-primary: #ffffff;
-  --background-secondary: #0a0219;
-  --background-third: #808080;
-  --background-fourth: #6a00ff;
-  --background-fifth: #05010f;
-  --background-sixth: #00ffbf;
+  /* ==========================================
+     PALETA DE CORES (Cores Fisiológicas)
+     ========================================== */
+  --color-white: #ffffff;
+  --color-dark-purple: #0a0219;
+  --color-purple: #6a00ff;
+  --color-black: #05010f;
+  --color-cyan: #00ffbf;
+  --color-cyan-alpha: rgba(0, 255, 191, 0.1);
+  --color-cyan-border: rgba(0, 255, 191, 0.25);
+  --color-gray: #808080;
+  --color-gray-light: rgba(255, 255, 255, 0.7);
+  --color-card-bg: rgba(255, 255, 255, 0.03);
 
-  /* TITLE */
-  --title-primary: #ffffff;
-  --title-secondary: #0a0219;
-  --title-third: #808080;
-  --title-fourth: #6a00ff;
-  --title-fifth: #05010f;
-  --title-sixth: #00ffbf;
+  /* ==========================================
+     USO SEMÂNTICO DE CORES
+     ========================================== */
+  --bg-main: var(--color-dark-purple);
+  --bg-card: var(--color-card-bg);
 
-  /* TEXT */
-  --text-primary: #ffffff;
-  --text-secondary: #0a0219;
-  --text-third: #808080;
-  --text-fourth: #6a00ff;
-  --text-fifth: #05010f;
-  --text-sixth: #00ffbf;
+  --title-color: var(--color-white);
+  --title-accent: var(--color-cyan);
 
-  --text-size-primary: 1.4rem;
-  --text-size-secondary: 1.3rem;
-  --text-size-third: 1.2rem;
+  --text-main: var(--color-white);
+  --text-muted: var(--color-gray-light);
+  --text-accent: var(--color-cyan);
 
-  /* BUTTON */
-  --button-primary: #ffffff;
-  --button-secondary: #0a0219;
-  --button-third: #808080;
-  --button-fourth: #6a00ff;
-  --button-fifth: #05010f;
-  --button-sixth: #00ffbf;
+  --border-card: rgba(255, 255, 255, 0.08);
+  --border-pill: rgba(255, 255, 255, 0.12);
+  --border-pill-hover: var(--color-cyan);
 
-  /* BORDER */
-  --border-primary: #ffffff;
-  --border-secondary: #0a0219;
-  --border-third: #e2edff59;
-  --border-fourth: #6a00ff;
-  --border-fifth: #05010f;
-  --border-sixth: #00ffbf;
-  --border-seventh: #808080;
+  /* ==========================================
+     TIPOGRAFIA & ESCALA DE TAMANHOS
+     ========================================== */
+  --title-h1: 3.5rem;
+  --title-h2: 2.2rem;
+  --title-h3: 1.35rem;
+  --title-h4: 0.85rem;
 
-  --border-radius-global: 1rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
 
-  --border-spacing: 1rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
 
-  /* ICON */
-  --icon-primary: #ffffff;
-  --icon-secondary: #0a0219;
-  --icon-third: #808080;
-  --icon-fourth: #6a00ff;
-  --icon-fifth: #05010f;
-  --icon-sixth: #00ffbf;
+  /* ==========================================
+     ESPAÇAMENTO, GEOMETRIA & BORDAS
+     ========================================== */
+  --border-radius-card: 1.25rem;
+  --border-radius-pill: 2rem;
+  --border-radius-icon: 1rem;
 
-  /* ESPAÇAMENTO */
-  --spacing-between-components: 4rem;
-  --spacing-between-tag: 1rem;
-  --spacing-between-children: 3rem;
-  --spacing-between-icon: 0.5rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 1.2rem;
+  --gap-lg: 2.5rem;
 
-  /* FONTE SIZE */
-  --font-size-title: 4rem;
+  --padding-card: 2rem 1.5rem;
+  --padding-pill: 0.35rem 0.75rem;
 
-  /* FONT WEIGHT */
-  --font-weight-100: 100;
-  --font-weight-200: 200;
-  --font-weight-300: 300;
-  --font-weight-400: 400;
-  --font-weight-500: 500;
-  --font-weight-600: 600;
-  --font-weight-700: 700;
-  --font-weight-800: 800;
-  --font-weight-900: 900;
-
-  /* ICON */
-  --icon-color: #00ffbf91;
-  --font-size-icon: 5rem;
-
-  /* MARGIN */
-  --margin-text: 0.5rem;
+  --icon-size: 2rem;
+  --icon-wrapper-size: 3.5rem;
 }

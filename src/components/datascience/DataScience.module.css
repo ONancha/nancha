@@ -1,0 +1,76 @@
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-md);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-wrapper-size);
+  height: var(--icon-wrapper-size);
+  background: var(--color-blue-alpha);
+  border: 1px solid var(--color-blue-border);
+}
+
+.icon {
+  font-size: var(--icon-size);
+  color: var(--text-accent);
+}
+
+.cardTitle {
+  font-size: var(--title-h3);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: var(--title-h4);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-accent);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+}
+
+.pillsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-sm);
+}
+
+.pillsGroup span {
+  font-size: var(--text-sm);
+  color: var(--text-main);
+  background: var(--bg-card);
+  border: 1px solid var(--border-pill);
+  padding: var(--padding-pill);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.pillsGroup span:hover {
+  border-color: var(--border-pill-hover);
+  background: var(--color-blue-alpha);
+}

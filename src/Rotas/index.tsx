@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import { Home } from "../pages/Home";
 import { Navbar } from "../components/Navbar";
-import { Habilidades } from "../pages/Habilidades/Habilidades";
+import { Habilidades } from "../pages/Habilidades/DataScience";
 
 export function Rota() {
   const location = useLocation();

@@ -1,38 +1,76 @@
-.header {
+.cardContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-between-tag);
-  justify-content: center;
   align-items: center;
-  color: var(--title-secondary);
+  text-align: center;
+  gap: var(--gap-md);
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
 }
 
-.contentContainer {
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-wrapper-size);
+  height: var(--icon-wrapper-size);
+  background: var(--color-blue-alpha);
+  border: 1px solid var(--color-blue-border);
+}
+
+.icon {
+  font-size: var(--icon-size);
+  color: var(--text-accent);
+}
+
+.cardTitle {
+  font-size: var(--title-h3);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  margin: 0;
+}
+
+.cardDesc {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-between-components);
+  gap: var(--gap-sm);
+  width: 100%;
 }
 
-.creationSection,
-.processSection {
+.sectionTitle {
+  font-size: var(--title-h4);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-accent);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+}
+
+.pillsGroup {
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-between-tag);
-  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-sm);
 }
 
-.creationSection p:nth-child(1),
-.processSection p {
-  color: var(--text-fourth);
+.pillsGroup span {
+  font-size: var(--text-sm);
+  color: var(--text-main);
+  background: var(--bg-card);
+  border: 1px solid var(--border-pill);
+  padding: var(--padding-pill);
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-.processList {
-  list-style-type: none;
-}
-
-.iconFront {
-  font-size: var(--font-size-icon);
-  padding: var(--spacing-between-icon);
-  background: var(--icon-color);
-  border-radius: var(--border-radius-global);
+.pillsGroup span:hover {
+  border-color: var(--border-pill-hover);
+  background: var(--color-blue-alpha);
 }

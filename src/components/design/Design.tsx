@@ -1,30 +1,36 @@
+import { MdOutlineBrush } from "react-icons/md";
 import styles from "./Design.module.css";
-
-import { RiOrganizationChart } from "react-icons/ri";
 
 export function Design() {
   return (
-    <div className={styles.contentContainer}>
-      <div className={styles.header}>
-        <RiOrganizationChart className={styles.iconBack} />
-        <h2>Designer</h2>
-        <p>
-          Valorizo código limpo, boas práticas e soluções construídas com
-          clareza e propósito.
-        </p>
-      </div>
-      <div className={styles.creationSection}>
-        <p>Coisas que gosto de criar:</p>
-        <p>Sites organizados, telas limpas e ideias que façam sentido.</p>
+    <div className={styles.cardContainer}>
+      <div className={styles.iconWrapper}>
+        <MdOutlineBrush className={styles.icon} aria-hidden="true" />
       </div>
 
-      <div className={styles.processSection}>
-        <p className={styles.processTitle}>Como as ideias começam pra mim:</p>
-        <ul className={styles.processList}>
-          <li>Papel e caneta</li>
-          <li>Canva</li>
-          <li>Café e foco</li>
-        </ul>
+      <h3 className={styles.cardTitle}>UI/UX & Web Design</h3>
+      <p className={styles.cardDesc}>
+        Concepção visual com foco em arquitetura limpa, clareza e usabilidade.
+      </p>
+
+      <div className={styles.section}>
+        <h4 className={styles.sectionTitle}>O que desenvolvo</h4>
+        <div className={styles.pillsGroup}>
+          <span>Design de Interfaces</span>
+          <span>Prototipagem</span>
+          <span>Layouts Responsivos</span>
+          <span>Sistemas de Cores</span>
+        </div>
+      </div>
+
+      <div className={styles.section}>
+        <h4 className={styles.sectionTitle}>Processo & Ferramentas</h4>
+        <div className={styles.pillsGroup}>
+          <span>Wireframing</span>
+          <span>Figma</span>
+          <span>Canva</span>
+          <span>Papel & Caneta</span>
+        </div>
       </div>
     </div>
   );

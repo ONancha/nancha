@@ -88,6 +88,13 @@
   }
 }
 
-.skillsSection {
-  height: 150vh;
+.experienceSection,
+.aboutSection {
+  background: #6a00ff;
+}
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }

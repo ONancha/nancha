@@ -4,22 +4,26 @@
   align-items: center;
   justify-content: center;
   background: transparent;
+  margin-bottom: 5rem;
 }
 
 .headingContent {
   width: 90%;
+  max-width: 1200px; /* Garante alinhamento com o Container principal */
   display: flex;
-  flex-flow: nowrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.iconLogo {
-  font-size: 3.5rem;
-  color: var(--text-secundary);
-}
-
 .headingImage {
   width: 10rem;
+  height: auto;
+  display: block;
+}
+
+.iconLogo {
+  font-size: 3.5rem;
+  color: var(--text-secondary, var(--text-secundary));
 }

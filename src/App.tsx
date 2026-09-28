@@ -1,5 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
-
 import styles from "./App.module.css";
 
 import "../src/styles/global.css";
@@ -10,10 +8,13 @@ import { Container } from "./components/Container";
 import { SectionHeading } from "./components/section-heading/SectionHeading";
 import { About } from "./pages/About/About";
 import { Habilidades } from "./pages/Habilidades/Habilidades";
+import { Experiencia } from "./pages/Experiencia/Experiencia";
+import { Projects } from "./components/projects/Projects";
+import { Footer } from "./components/footer/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Container className={styles.homeSection}>
         <SectionHeading className={styles.homeHeading} />
         <Home />
@@ -23,10 +24,19 @@ function App() {
         <Habilidades />
       </Container>
 
+      <Container className={styles.experienceSection}>
+        <Experiencia />
+      </Container>
+
+      <Container className={styles.projectsSection}>
+        <Projects />
+      </Container>
+
       <Container className={styles.aboutSection}>
         <About />
       </Container>
-    </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 

@@ -9,11 +9,12 @@
   border: none;
   background: transparent;
   cursor: pointer;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 6px;
+  z-index: 100; /* Garante que o botão fique acima do menu quando aberto */
 }
 
 /* BARRAS */
@@ -21,13 +22,15 @@
   width: 28px;
   height: 3px;
   background: white;
-  border-radius: 999px;
-  transition: all 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
-/* VIRA X */
+/* EFEITO X DO HAMBÚRGUER */
 .open .bar:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
+  background: #f2f2f2; /* Opcional: altera a cor da barra para preto se o fundo do menu for claro */
 }
 
 .open .bar:nth-child(2) {
@@ -36,6 +39,7 @@
 
 .open .bar:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
+  background: #f2f2f2;
 }
 
 /* MENU ESCONDIDO */
@@ -44,15 +48,17 @@
   top: 55px;
   right: 0;
   padding: 2rem;
-  border-radius: 1rem;
   background: #f2f2f2;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  z-index: 90;
 
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
-
-  transition: all 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
 }
 
 /* MENU ABERTO */
@@ -80,6 +86,7 @@
   color: #0a0219;
   text-decoration: none;
   font-size: 1.3rem;
+  font-weight: 500;
   transition: opacity 0.2s ease;
 }
 
@@ -90,22 +97,24 @@
 }
 
 .contactSection {
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 
 .contactTitle {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   opacity: 0.7;
   margin-bottom: 10px;
+  color: #0a0219;
 }
 
 .contactLink {
   display: block;
   margin-bottom: 8px;
-  color: #0a0219;
 }
 
 .socialList {
   display: flex;
-  gap: 3rem;
+  gap: 1.2rem; /* Ajustado espaçamento para não estourar a caixa em mobile */
+  flex-wrap: wrap;
 }

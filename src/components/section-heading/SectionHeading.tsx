@@ -1,33 +1,30 @@
 import styles from "./SectionHeading.module.css";
-
 import logo from "../../assets/images/nakito.svg";
 import { MenuToggle } from "../MenuToggle/MenuToggle";
 
 type SectionHeadingProps = {
   imageSrc?: string;
-  title?: string;
-  description?: string;
   className?: string;
 };
 
 export function SectionHeading({
   imageSrc = logo,
-  className,
+  className = "",
 }: SectionHeadingProps) {
   return (
-    <section className={`${styles.headingContainer} ${className || ""}`}>
+    <header className={`${styles.headingContainer} ${className}`.trim()}>
       <div className={styles.headingContent}>
         <div className={styles.imageWrapper}>
           <img
             src={imageSrc}
             className={styles.headingImage}
-            alt="Nakito logo"
+            alt="Logo Nailson"
           />
         </div>
-        <div>
+        <nav aria-label="Navegação principal">
           <MenuToggle />
-        </div>
+        </nav>
       </div>
-    </section>
+    </header>
   );
 }

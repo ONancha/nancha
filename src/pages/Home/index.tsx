@@ -6,7 +6,7 @@ import { ServicesSection } from "../../components/service-section/ServicesSectio
 
 export function Home() {
   return (
-    <section className={styles.container}>
+    <section className={styles.home}>
       <div>
         <HeroContent />
       </div>

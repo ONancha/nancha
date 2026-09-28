@@ -1,18 +1,14 @@
 .contact {
-  position: fixed; /* prende na tela */
-  top: 80px; /* começa logo abaixo do header fixo */
-  left: 0;
   width: 100%;
-  height: calc(100vh - 80px); /* ocupa o espaço restante da tela */
+  padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* impede scroll, conteúdo não se move */
-  border: 1px solid black;
 }
 
 .contact_cards {
-  width: 60%;
+  width: 100%;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,75 +16,119 @@
 
 .contact_info {
   display: flex;
-  flex-flow: column;
-  margin-bottom: 4rem; /* reduzido para caber melhor */
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
-.contact_info h1 {
-  margin-bottom: 2rem;
+.contact_info h2 {
+  font-size: var(--title-h2, 2.5rem);
+  color: var(--title-secondary, #ffffff);
+}
+
+.contact_info p {
+  color: var(--text-third, rgba(255, 255, 255, 0.7));
+  font-size: var(--text-size-primary, 1.1rem);
 }
 
 .contact_form {
   width: 100%;
 }
 
-.contact form {
+.form {
   display: flex;
-  flex-flow: column;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
-  padding: 5px 0;
-}
-
-input:focus,
-textarea:focus {
-  border-bottom-color: #007bff;
+  flex-direction: column;
 }
 
 .contact_inputs {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
+  width: 100%;
 }
 
 .card_input {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  gap: 0.5rem;
   width: 50%;
   margin-bottom: 2rem;
 }
 
-.card_input input {
-  padding: 1rem 0;
-  font-size: 1.6rem;
+.card_input label,
+.textarea_div label {
+  font-size: 0.95rem;
+  color: var(--text-fourth, rgba(255, 255, 255, 0.8));
+}
+
+.card_input input,
+.textarea_div textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--border-third, rgba(255, 255, 255, 0.2));
+  outline: none;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  color: var(--text-primary, #ffffff);
+  transition: border-color 0.3s ease;
   width: 100%;
 }
 
-.button {
-  padding: 1rem;
-  width: 40%;
-  font-size: 1.6rem;
+.card_input input:focus,
+.textarea_div textarea:focus {
+  border-bottom-color: var(--text-ciano, #00f2fe);
 }
 
 .textarea_div {
   width: 100%;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .textarea_div textarea {
-  width: 100%;
-  font-size: 1.6rem;
+  resize: vertical;
+  min-height: 100px;
 }
 
 .button_div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.button {
+  padding: 0.8rem 2.5rem;
+  min-width: 180px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0a0219;
+  background: var(--text-ciano, #00f2fe);
+  border: none;
+  cursor: pointer;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Responsividade Mobile */
+@media (max-width: 650px) {
+  .contact_inputs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card_input {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
 }

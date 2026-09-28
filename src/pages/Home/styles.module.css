@@ -1,8 +1,8 @@
-.container {
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   gap: 4rem;
-  height: 120vh;
+  min-height: auto;
 }

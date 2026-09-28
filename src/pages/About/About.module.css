@@ -1,24 +1,37 @@
 .aboutSection {
+  position: relative;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  border: 2px solid red;
+  gap: var(--spacing-between-components, 2rem);
+}
+
+.title {
+  color: var(--title-primary);
+  font-size: var(--title-h2, 2.5rem);
+  text-align: center;
+}
+
+.profile {
+  width: 15rem;
+  height: 15rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .textContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: var(--spacing-between-children, 1.5rem);
 }
 
 .textContent p {
-  color: var(--text-fifth);
+  color: var(--text-primary);
+  font-size: var(--text-size-primary, 1.1rem);
   text-align: center;
-}
-
-.profile {
-  width: 10rem;
+  line-height: 1.6;
+  max-width: 600px;
 }
